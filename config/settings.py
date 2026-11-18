@@ -21,8 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'users',
-    'courses',
-    'lessons',
+    'materials',
 
 ]
 
@@ -98,11 +97,11 @@ LOGIN_REDIRECT_URL = '/home/'
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
 
-CACHES = {
-    'default': {
-        'BACKEND': os.environ.get('BACKEND'),
-        'LOCATION': os.environ.get('LOCATION')
-    }
-}
-
-CACHE_TIMEOUT = 60 * int(os.environ.get('CACHE_TIMEOUT', 5))
+# CACHES = {
+#     'default': {
+#         'BACKEND': os.environ.get('BACKEND'),
+#         'LOCATION': os.environ.get('LOCATION')
+#     }
+# }
+#
+# CACHE_TIMEOUT = 60 * int(os.environ.get('CACHE_TIMEOUT', 5))
