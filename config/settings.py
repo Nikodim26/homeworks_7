@@ -19,6 +19,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'users',
+    'materials',
+
 ]
 
 MIDDLEWARE = [
@@ -88,9 +92,16 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media/"
 
+AUTH_USER_MODEL = 'users.User'
+LOGIN_REDIRECT_URL = '/home/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = '/login/'
 
-MAILERS = {
-    'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
-    },
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': os.environ.get('BACKEND'),
+#         'LOCATION': os.environ.get('LOCATION')
+#     }
+# }
+#
+# CACHE_TIMEOUT = 60 * int(os.environ.get('CACHE_TIMEOUT', 5))
