@@ -1,0 +1,57 @@
+[
+  {
+    "model": "materials.lesson",
+    "pk": 1,
+    "fields": {
+      "name": "Введение в Django",
+      "image": null,
+      "description": "Установка Django, структура проекта, первое приложение.",
+      "video_link": "https://youtube.com/watch?v=dj_intro",
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 2,
+    "fields": {
+      "name": "Модели и миграции",
+      "image": null,
+      "description": "Создание моделей, поля, регистрация в админке, миграции.",
+      "video_link": "https://youtube.com/watch?v=dj_models",
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 3,
+    "fields": {
+      "name": "ORM: запросы к базе",
+      "image": null,
+      "description": "QuerySet, фильтрация, сортировка, аннотации.",
+      "video_link": "https://youtube.com/watch?v=dj_orm",
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 4,
+    "fields": {
+      "name": "Классовые представления",
+      "image": null,
+      "description": "ListView, DetailView, CreateView и работа с вьюхами.",
+      "video_link": "https://youtube.com/watch?v=dj_cbv",
+      "course": 2
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 5,
+    "fields": {
+      "name": "DRF: основы",
+      "image": null,
+      "description": "Сериализаторы, вьюсеты и роутеры в Django REST Framework.",
+      "video_link": "https://youtube.com/watch?v=drf_basics",
+      "course": 2
+    }
+  }
+]
