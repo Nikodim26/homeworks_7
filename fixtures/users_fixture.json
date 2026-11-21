@@ -1,28 +1,7 @@
 [
 {
     "model": "users.user",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$1500000$3AzI38v8CSIj1G6TSc8DZa$mtiGWXOM+lmB0HENNUu5LzcRiUuYPPTjAGAYgoelKmU=",
-        "last_login": "2026-11-14T16:13:03.605Z",
-        "is_superuser": true,
-        "first_name": "",
-        "last_name": "",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2026-10-29T10:56:58Z",
-        "email": "lr1975@yandex.ru",
-        "avatar": "users/image/рф_загран.jpg",
-        "phone_number": "+79118355919",
-        "country": "Россия",
-        "token": null,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "users.user",
-    "pk": 57,
+    "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$1500000$yfopNUIuLtq9jXpg8DpxZX$PxRCzROMQHZh0cHxLjuf88p0PXecen8jA6vFJwnfmK4=",
         "last_login": "2026-11-13T16:38:55.737Z",
@@ -43,7 +22,7 @@
 },
 {
     "model": "users.user",
-    "pk": 58,
+    "pk": 3,
     "fields": {
         "password": "pbkdf2_sha256$1500000$dzMfRbCoJ12yB75kPuWoJw$4cZ2kzKiCInfq3WqYwcAH5BytuyCRntkTgDgLCl97YM=",
         "last_login": "2026-11-14T16:08:53.909Z",
@@ -64,7 +43,7 @@
 },
 {
     "model": "users.user",
-    "pk": 59,
+    "pk": 4,
     "fields": {
         "password": "pbkdf2_sha256$1500000$BAqgPWPyGqrEVcVxEg7Nw3$WQtiQjVAvxgzYnmmLayXWvgu/xn2P+Mkba28fOgVJDE=",
         "last_login": "2026-11-14T16:08:17.598Z",
@@ -79,9 +58,7 @@
         "phone_number": "+79118355930",
         "country": "Россия",
         "token": null,
-        "groups": [
-            4
-        ],
+        "groups": [],
         "user_permissions": []
     }
 }
