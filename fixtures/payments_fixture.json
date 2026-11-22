@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$1500000$IZISOEAiTNcKJBb1ENFgs1$w6hZklr95P7TwycOkjojdbeFfl3QFICxT6Jka1Xf750=",
-        "last_login": "2026-11-21T16:18:43.451Z",
+        "last_login": "2026-11-21T16:54:19.942Z",
         "is_superuser": true,
         "first_name": "",
         "last_name": "",
@@ -12,9 +12,9 @@
         "is_active": true,
         "date_joined": "2026-11-21T12:38:42.868Z",
         "email": "lr1975@yandex.ru",
-        "avatar": "users/image/рф_загран.jpg",
+        "avatar": "users/image/СЂС„_Р·Р°РіСЂР°РЅ.jpg",
         "phone_number": "+79118355919",
-        "country": "Россия",
+        "country": "Р РѕСЃСЃРёСЏ",
         "token": null,
         "groups": [],
         "user_permissions": []
@@ -33,9 +33,9 @@
         "is_active": false,
         "date_joined": "2026-11-13T15:30:49.772Z",
         "email": "Trus@yandex.ru",
-        "avatar": "users/image/трус.png",
+        "avatar": "users/image/С‚СЂСѓСЃ.png",
         "phone_number": "+79118355910",
-        "country": "Россия",
+        "country": "Р РѕСЃСЃРёСЏ",
         "token": null,
         "groups": [],
         "user_permissions": []
@@ -54,9 +54,9 @@
         "is_active": true,
         "date_joined": "2026-11-13T15:32:31.779Z",
         "email": "Balbes@mail.ru",
-        "avatar": "users/image/балбес.png",
+        "avatar": "users/image/Р±Р°Р»Р±РµСЃ.png",
         "phone_number": "+79118355920",
-        "country": "Россия",
+        "country": "Р РѕСЃСЃРёСЏ",
         "token": null,
         "groups": [],
         "user_permissions": []
@@ -67,7 +67,7 @@
     "pk": 4,
     "fields": {
         "password": "pbkdf2_sha256$1500000$BAqgPWPyGqrEVcVxEg7Nw3$WQtiQjVAvxgzYnmmLayXWvgu/xn2P+Mkba28fOgVJDE=",
-        "last_login": "2026-11-14T16:08:17.598Z",
+        "last_login": "2026-11-21T16:54:31.764Z",
         "is_superuser": false,
         "first_name": "",
         "last_name": "",
@@ -75,9 +75,9 @@
         "is_active": true,
         "date_joined": "2026-11-13T15:34:16Z",
         "email": "Byvaliy@gmail.com",
-        "avatar": "users/image/бывалый.png",
+        "avatar": "users/image/Р±С‹РІР°Р»С‹Р№.png",
         "phone_number": "+79118355930",
-        "country": "Россия",
+        "country": "Р РѕСЃСЃРёСЏ",
         "token": null,
         "groups": [],
         "user_permissions": []
@@ -92,7 +92,7 @@
         "paid_course": 1,
         "paid_lesson": null,
         "amount": "5000.00",
-        "payment_method": "перевод на счет"
+        "payment_method": "РїРµСЂРµРІРѕРґ РЅР° СЃС‡РµС‚"
     }
 },
 {
@@ -104,7 +104,7 @@
         "paid_course": null,
         "paid_lesson": 2,
         "amount": "1500.00",
-        "payment_method": "наличные"
+        "payment_method": "РЅР°Р»РёС‡РЅС‹Рµ"
     }
 },
 {
@@ -116,7 +116,7 @@
         "paid_course": 2,
         "paid_lesson": null,
         "amount": "7500.00",
-        "payment_method": "перевод на счет"
+        "payment_method": "РїРµСЂРµРІРѕРґ РЅР° СЃС‡РµС‚"
     }
 },
 {
@@ -128,7 +128,7 @@
         "paid_course": null,
         "paid_lesson": 1,
         "amount": "2000.00",
-        "payment_method": "наличные"
+        "payment_method": "РЅР°Р»РёС‡РЅС‹Рµ"
     }
 },
 {
@@ -140,7 +140,7 @@
         "paid_course": 1,
         "paid_lesson": null,
         "amount": "5000.00",
-        "payment_method": "перевод на счет"
+        "payment_method": "РїРµСЂРµРІРѕРґ РЅР° СЃС‡РµС‚"
     }
 }
 ]

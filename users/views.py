@@ -6,20 +6,37 @@ from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, TemplateView
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
+from rest_framework.filters import OrderingFilter
+from rest_framework.permissions import IsAuthenticated
 
 from config import settings
 from users.filters import PaymentFilter
 from users.forms import UserRegisterForm
 from users.models import Payment, User
-from users.serializers import PaymentSerializer
+from users.serializers import PaymentSerializer, UserProfileSerializer
 
 
 class PaymentViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Payment.objects.all()
     serializer_class = PaymentSerializer
-    filter_backends = [DjangoFilterBackend]
+    permission_classes = [IsAuthenticated]
+    filter_backends = [DjangoFilterBackend, OrderingFilter]
     filterset_class = PaymentFilter
+    ordering_fields = ("payment_date",)
+    ordering = ("-payment_date",)
+
+    def get_queryset(self):
+        return Payment.objects.filter(
+            user=self.request.user,
+        ).select_related("user", "paid_course", "paid_lesson")
+
+
+class UserProfileAPIView(generics.RetrieveUpdateAPIView):
+    serializer_class = UserProfileSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_object(self):
+        return self.request.user
 
 
 class UserCreateView(CreateView):

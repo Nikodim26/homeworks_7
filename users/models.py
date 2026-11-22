@@ -35,7 +35,7 @@ class Payment(models.Model):
     paid_lesson = models.ForeignKey(Lesson, on_delete=models.SET_NULL, null=True, blank=True,
                                     verbose_name='оплаченный урок', related_name='payments', )
     amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='сумма оплаты', )
-    payment_method = models.CharField(max_length=50, choices=PAYMENT_METHODS, default='Перевод на счет',
+    payment_method = models.CharField(max_length=50, choices=PAYMENT_METHODS, default='перевод на счет',
                                       verbose_name='способ оплаты', )
 
     def __str__(self):
