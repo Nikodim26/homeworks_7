@@ -8,7 +8,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         group, _ = Group.objects.get_or_create(name="Менеджеры")
 
-        codenames = ["view_newsletter", "view_letter", "view_customer","view_user"]
+        codenames = ["view_course", "view_lesson", "view_payment","view_user"]
 
         permissions = Permission.objects.filter(codename__in=codenames)
 

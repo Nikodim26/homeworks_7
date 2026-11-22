@@ -5,11 +5,13 @@ from materials.models import Course, Lesson
 
 
 class User(AbstractUser):
+
     username = None
     email = models.EmailField(unique=True, verbose_name='Email')
     avatar = models.ImageField(upload_to='users/image', verbose_name='Аватар', blank=True, null=True)
-    phone_number = models.CharField(max_length=15, verbose_name='Телефон', blank=True, null=True)
-    country = models.CharField(max_length=50, verbose_name='Страна', blank=True, null=True)
+    phone_number = models.CharField(max_length=15, verbose_name='Телефон',blank=True, null=True)
+    country = models.CharField(max_length=50, verbose_name='Страна',blank=True, null=True)
+    token = models.CharField(max_length=100, verbose_name="Token", blank=True, null=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
@@ -33,7 +35,7 @@ class Payment(models.Model):
     paid_lesson = models.ForeignKey(Lesson, on_delete=models.SET_NULL, null=True, blank=True,
                                     verbose_name='оплаченный урок', related_name='payments', )
     amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='сумма оплаты', )
-    payment_method = models.CharField(max_length=50, choices=PAYMENT_METHODS, default=TRANSFER,
+    payment_method = models.CharField(max_length=50, choices=PAYMENT_METHODS, default='Перевод на счет',
                                       verbose_name='способ оплаты', )
 
     def __str__(self):
