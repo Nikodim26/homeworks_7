@@ -11,7 +11,7 @@ class UserAdmin(admin.ModelAdmin):
 
 @admin.register(Payment)
 class PaymentAdmin(admin.ModelAdmin):
-    list_display = ('id','payment_date','paid_lesson','amount')
+    list_display = ('id','payment_date','paid_lesson','amount','user')
     search_fields = ('amount',)
 
 @admin.register(Course)
@@ -21,5 +21,5 @@ class CourseAdmin(admin.ModelAdmin):
 
 @admin.register(Lesson)
 class LessonAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'description')
+    list_display = ('id', 'name', 'description','course')
     search_fields = ('name', 'description')

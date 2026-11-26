@@ -1,47 +1,29 @@
 [
-{
+  {
     "model": "materials.course",
     "pk": 1,
     "fields": {
-        "name": "Django: с нуля до профи",
-        "image": "",
-        "description": "Полный курс по Django: модели, вьюхи, формы и админка."
+      "name": "Python с нуля",
+      "image": null,
+      "description": "Базовый курс по языку Python: синтаксис, типы данных, функции и первые проекты."
     }
-},
-{
+  },
+  {
     "model": "materials.course",
     "pk": 2,
     "fields": {
-        "name": "REST API на Django REST Framework",
-        "image": "",
-        "description": "Сериализаторы, вьюсеты, роутеры, права доступа и авторизация."
+      "name": "Django для начинающих",
+      "image": null,
+      "description": "Учимся создавать веб-приложения на Django: модели, представления, шаблоны и админка."
     }
-},
-{
+  },
+  {
     "model": "materials.course",
     "pk": 3,
     "fields": {
-        "name": "Python: продвинутый уровень",
-        "image": "",
-        "description": "Декораторы, генераторы, контекстные менеджеры и ООП на практике."
+      "name": "REST API на Django REST Framework",
+      "image": null,
+      "description": "Проектирование и разработка REST API: сериализаторы, вьюсеты, роутеры и аутентификация."
     }
-},
-{
-    "model": "materials.course",
-    "pk": 4,
-    "fields": {
-        "name": "Тестирование в Python и Django",
-        "image": "",
-        "description": "pytest, coverage, unit- и интеграционные тесты, фикстуры и моки."
-    }
-},
-{
-    "model": "materials.course",
-    "pk": 5,
-    "fields": {
-        "name": "Docker и деплой Python-приложений",
-        "image": "",
-        "description": "Контейнеризация, docker-compose, CI/CD, деплой на сервер."
-    }
-}
+  }
 ]

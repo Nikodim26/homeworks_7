@@ -1,57 +1,101 @@
 [
-{
+  {
     "model": "materials.lesson",
     "pk": 1,
     "fields": {
-        "name": "Введение в Django",
-        "image": "",
-        "description": "Установка Django, структура проекта, первое приложение.",
-        "video_link": "https://youtube.com/watch?v=dj_intro",
-        "course": 1
+      "name": "Знакомство с Python",
+      "image": null,
+      "description": "Установка интерпретатора, первый скрипт, переменные и вывод в консоль.",
+      "video_link": "https://example.com/videos/python-lesson-1",
+      "course": 1
     }
-},
-{
+  },
+  {
     "model": "materials.lesson",
     "pk": 2,
     "fields": {
-        "name": "Модели и миграции",
-        "image": "",
-        "description": "Создание моделей, поля, регистрация в админке, миграции.",
-        "video_link": "https://youtube.com/watch?v=dj_models",
-        "course": 1
+      "name": "Типы данных и условия",
+      "image": null,
+      "description": "Числа, строки, списки и ветвление: как программа принимает решения.",
+      "video_link": "https://example.com/videos/python-lesson-2",
+      "course": 1
     }
-},
-{
+  },
+  {
     "model": "materials.lesson",
     "pk": 3,
     "fields": {
-        "name": "ORM: запросы к базе",
-        "image": "",
-        "description": "QuerySet, фильтрация, сортировка, аннотации.",
-        "video_link": "https://youtube.com/watch?v=dj_orm",
-        "course": 1
+      "name": "Функции и циклы",
+      "image": null,
+      "description": "Объявление функций, аргументы, возврат значений, циклы for и while.",
+      "video_link": "https://example.com/videos/python-lesson-3",
+      "course": 1
     }
-},
-{
+  },
+  {
     "model": "materials.lesson",
     "pk": 4,
     "fields": {
-        "name": "Классовые представления",
-        "image": "",
-        "description": "ListView, DetailView, CreateView и работа с вьюхами.",
-        "video_link": "https://youtube.com/watch?v=dj_cbv",
-        "course": 2
+      "name": "Создание проекта Django",
+      "image": null,
+      "description": "Установка Django, структура проекта, первые миграции и запуск dev-сервера.",
+      "video_link": "https://example.com/videos/django-lesson-1",
+      "course": 2
     }
-},
-{
+  },
+  {
     "model": "materials.lesson",
     "pk": 5,
     "fields": {
-        "name": "DRF: основы",
-        "image": "",
-        "description": "Сериализаторы, вьюсеты и роутеры в Django REST Framework.",
-        "video_link": "https://youtube.com/watch?v=drf_basics",
-        "course": 2
+      "name": "Модели и база данных",
+      "image": null,
+      "description": "ORM Django: создание моделей, поля, связи и работа с миграциями.",
+      "video_link": "https://example.com/videos/django-lesson-2",
+      "course": 2
     }
-}
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 6,
+    "fields": {
+      "name": "Админка и представления",
+      "image": null,
+      "description": "Регистрация моделей в админке, представления и маршруты (URLconf).",
+      "video_link": "https://example.com/videos/django-lesson-3",
+      "course": 2
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 7,
+    "fields": {
+      "name": "Сериализаторы",
+      "image": null,
+      "description": "Что такое сериализация, сериализаторы DRF и валидация входных данных.",
+      "video_link": "https://example.com/videos/drf-lesson-1",
+      "course": 3
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 8,
+    "fields": {
+      "name": "Вьюсеты и роутеры",
+      "image": null,
+      "description": "ViewSet, ModelViewSet и Router: как быстро получить готовый CRUD-эндпоинт.",
+      "video_link": "https://example.com/videos/drf-lesson-2",
+      "course": 3
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 9,
+    "fields": {
+      "name": "Аутентификация и JWT",
+      "image": null,
+      "description": "Simple JWT: выдача и обновление токенов, защита эндпоинтов.",
+      "video_link": "https://example.com/videos/drf-lesson-3",
+      "course": 3
+    }
+  }
 ]

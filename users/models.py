@@ -19,6 +19,8 @@ class User(AbstractUser):
     class Meta:
         verbose_name = 'пользователь'
         verbose_name_plural = 'пользователи'
+        ordering = ['id']
+
 
     def __str__(self):
         return self.email
@@ -28,7 +30,7 @@ class Payment(models.Model):
 
     PAYMENT_METHODS = [('наличные', 'Наличные'), ('перевод на счет', 'Перевод на счет'), ]
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='пользователь', related_name='payments', )
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='покупатель', related_name='payments', )
     payment_date = models.DateTimeField(auto_now_add=True, verbose_name='дата оплаты', )
     paid_course = models.ForeignKey(Course, on_delete=models.SET_NULL, null=True, blank=True,
                                     verbose_name='оплаченный курс', related_name='payments', )
@@ -44,3 +46,9 @@ class Payment(models.Model):
     class Meta:
         verbose_name = 'платеж'
         verbose_name_plural = 'платежи'
+        ordering = ['payment_date']
+
+    def save(self, *args, **kwargs):
+        if self.paid_lesson and not self.paid_course:
+            self.paid_course = self.paid_lesson.course
+        super().save(*args, **kwargs)
