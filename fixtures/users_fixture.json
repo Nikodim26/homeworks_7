@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$1500000$IZISOEAiTNcKJBb1ENFgs1$w6hZklr95P7TwycOkjojdbeFfl3QFICxT6Jka1Xf750=",
-        "last_login": "2026-11-21T16:54:19.942Z",
+        "last_login": "2026-11-22T14:32:05.792Z",
         "is_superuser": true,
         "first_name": "",
         "last_name": "",
@@ -30,7 +30,7 @@
         "first_name": "",
         "last_name": "",
         "is_staff": false,
-        "is_active": false,
+        "is_active": true,
         "date_joined": "2026-11-13T15:30:49.772Z",
         "email": "Trus@yandex.ru",
         "avatar": "users/image/трус.png",
@@ -81,66 +81,6 @@
         "token": null,
         "groups": [],
         "user_permissions": []
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 1,
-    "fields": {
-        "user": 1,
-        "payment_date": "2024-01-15T10:30:00Z",
-        "paid_course": 1,
-        "paid_lesson": null,
-        "amount": "5000.00",
-        "payment_method": "перевод на счет"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 2,
-    "fields": {
-        "user": 1,
-        "payment_date": "2024-02-20T14:00:00Z",
-        "paid_course": null,
-        "paid_lesson": 2,
-        "amount": "1500.00",
-        "payment_method": "наличные"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 3,
-    "fields": {
-        "user": 2,
-        "payment_date": "2024-03-01T09:45:00Z",
-        "paid_course": 2,
-        "paid_lesson": null,
-        "amount": "7500.00",
-        "payment_method": "перевод на счет"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 4,
-    "fields": {
-        "user": 2,
-        "payment_date": "2024-03-18T16:20:00Z",
-        "paid_course": null,
-        "paid_lesson": 1,
-        "amount": "2000.00",
-        "payment_method": "наличные"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 5,
-    "fields": {
-        "user": 3,
-        "payment_date": "2024-04-05T12:00:00Z",
-        "paid_course": 1,
-        "paid_lesson": null,
-        "amount": "5000.00",
-        "payment_method": "перевод на счет"
     }
 }
 ]
